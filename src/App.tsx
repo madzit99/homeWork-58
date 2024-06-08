@@ -23,7 +23,18 @@ function App() {
     setShowAlert(false);
   };
 
-
+  const btnConfig = [
+    {
+      type: "primary",
+      label: "Continue",
+      onClick: openAlert,
+    },
+    {
+      type: "danger",
+      label: "Close",
+      onClick: closeModal,
+    },
+  ];
 
   return (
     <>
@@ -39,6 +50,7 @@ function App() {
         show={showModal}
         title={"Заголовок модального окна"}
         onClose={closeModal}
+        buttons={btnConfig}
       >
         контент модального окна
       </Modal>

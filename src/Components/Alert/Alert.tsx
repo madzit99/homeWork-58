@@ -7,8 +7,8 @@ interface Props extends React.PropsWithChildren {
 const Alert: React.FC<Props> = ({ show, type, onDismiss, children }) => {
   return (
     <div
-      className={`alert alert-${type} w-50  position-fixed top-25 start-50 translate-middle`}
-      style={{ display: show ? "block" : "none" }}
+      className={`alert alert-${type} w-50 position-fixed top-25 start-50 translate-middle`}
+      style={{ display: show ? "block" : "none", zIndex: '10000' }}
     >
       <div className="row">
         <div className="col">{children}</div>
