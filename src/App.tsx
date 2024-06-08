@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import Modal from "./Components/Modal/Modal";
 import Alert from "./Components/Alert/Alert";
 
