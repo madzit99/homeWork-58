@@ -37,11 +37,11 @@ function App() {
 
   return (
     <>
-      <button className="btn btn-primary" onClick={openModal}>
+      <button className="btn col-4 m-5 btn-danger" onClick={openModal}>
         Открыть модальное окно
       </button>
 
-      <button className="btn btn-primary" onClick={openAlert}>
+      <button className="btn col-4 btn-secondary" onClick={openAlert}>
         Открыть алерт
       </button>
 
